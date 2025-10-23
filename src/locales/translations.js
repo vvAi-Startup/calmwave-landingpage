@@ -9,8 +9,8 @@ export const translations = {
     hero: {
       badge: 'Tecnologia Educacional Inclusiva',
       title: 'Calm Wave',
-      subtitle: 'Áudio Cristalino para Todos',
-      description: 'Solução inovadora de redução de ruído para crianças com Transtorno do Processamento Auditivo Central (TPAC), usando IA para entregar a voz do professor com clareza excepcional.',
+      subtitle: 'Clareza de Fala com o Poder da IA: Suporte Auditivo para Crianças com TPAC.',
+      description: 'A tecnologia que silencia o ruído da sala e proporciona o ambiente auditivo ideal para o seu filho com TPAC.',
       tryFree: 'Experimente Gratuitamente',
       learnMore: 'Saiba Mais',
       stats: {

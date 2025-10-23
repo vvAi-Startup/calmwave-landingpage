@@ -37,8 +37,8 @@ export default function HowItWorks() {
     <section id="como-funciona" className="py-20 bg-white" role="region" aria-labelledby="como-funciona-title">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 id="como-funciona-title" className="text-4xl font-bold mb-4 text-slate-900">{t.title}</h2>
-          <p className="text-slate-600 text-lg">
+          <h2 id="como-funciona-title" style={{ color: 'var(--text-primary)' }} className="text-4xl font-bold mb-4">{t.title}</h2>
+          <p style={{ color: 'var(--text-secondary)' }} className="text-lg">
             {t.subtitle}
           </p>
         </div>

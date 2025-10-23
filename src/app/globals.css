@@ -1,8 +1,83 @@
 @import "tailwindcss";
 
 :root {
+  /* ===== CORES PRINCIPAIS ===== */
+  /* Background */
   --background: #FEFDFA;
+  --background-white: #FFFFFF;
+  
+  /* Texto */
   --foreground: #1a1a1a;
+  --text-primary: #0f172a;      /* slate-900 */
+  --text-secondary: #475569;    /* slate-600 */
+  --text-tertiary: #64748b;     /* slate-500 */
+  
+  /* Cor de Affordance Principal (Teal) */
+  --primary: #0CAC92;           /* teal-500 */
+  --primary-hover: #0c8379;     /* teal-600 */
+  --primary-light: #5eead4;     /* teal-300 */
+  --primary-bg: #f0fdfa;        /* teal-50 */
+  --primary-border: #99f6e4;    /* teal-200 */
+  
+  /* Estados e Interações */
+  --border-light: #e2e8f0;      /* slate-200 */
+  --border-medium: #cbd5e1;     /* slate-300 */
+  --hover-bg: #f8fafc;          /* slate-50 */
+  --active-bg: #f1f5f9;         /* slate-100 */
+  
+  /* Sombras */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* Overlay e Backdrop */
+  --overlay-dark: rgba(0, 0, 0, 0.2);
+  --overlay-light: rgba(255, 255, 255, 0.9);
+  
+  /* ===== COMPONENTES ESPECÍFICOS ===== */
+  /* Header */
+  --header-bg: rgba(254, 253, 250, 0.95);
+  --header-border: rgba(226, 232, 240, 0.5);
+  
+  /* Hero */
+  --hero-badge-bg: var(--primary-bg);
+  --hero-badge-text: #0f766e;  /* teal-700 */
+  --hero-badge-border: var(--primary-border);
+  
+  /* Features */
+  --feature-card-bg: var(--background-white);
+  --feature-card-hover: var(--hover-bg);
+  --feature-icon-bg: var(--primary-bg);
+  
+  /* Benefits */
+  --benefits-bg: var(--primary);
+  --benefits-text: var(--background-white);
+  --benefits-text-secondary: #ccfbf1; /* teal-50 mais claro */
+  
+  /* CTA */
+  --cta-bg: var(--primary);
+  --cta-text: var(--background-white);
+  --cta-button-bg: var(--background-white);
+  --cta-button-text: var(--primary);
+  --cta-button-border: var(--background-white);
+  
+  /* Footer */
+  --footer-bg: var(--background-white);
+  --footer-text: var(--text-secondary);
+  --footer-heading: var(--primary);
+  --footer-border: var(--border-light);
+  
+  /* Accessibility Menu */
+  --menu-bg: var(--background-white);
+  --menu-text: var(--text-primary);
+  --menu-button-inactive: #f1f5f9;  /* slate-100 */
+  --menu-button-hover: #e2e8f0;     /* slate-200 */
+  
+  /* Focus Ring */
+  --focus-ring: var(--primary);
+  --focus-ring-offset: 2px;
 }
 
 html {

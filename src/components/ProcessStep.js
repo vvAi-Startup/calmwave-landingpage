@@ -18,7 +18,8 @@ export default function ProcessStep({ number, icon: Icon, title, description, sh
     >
       <div className="relative mb-8">
         <motion.div 
-          className="w-24 h-24 bg-teal-500 rounded-full flex flex-col items-center justify-center mx-auto shadow-xl"
+          style={{ backgroundColor: 'var(--primary)' }}
+          className="w-24 h-24 rounded-full flex flex-col items-center justify-center mx-auto shadow-xl"
           whileHover={{ 
             scale: 1.15,
             rotate: 360,
@@ -48,7 +49,8 @@ export default function ProcessStep({ number, icon: Icon, title, description, sh
         </motion.div>
         {showLine && (
           <motion.div 
-            className="hidden md:block absolute top-12 left-[60%] w-full h-1 bg-teal-200"
+            style={{ backgroundColor: 'var(--primary-border)' }}
+            className="hidden md:block absolute top-12 left-[60%] w-full h-1"
             initial={{ scaleX: 0, originX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -57,7 +59,8 @@ export default function ProcessStep({ number, icon: Icon, title, description, sh
         )}
       </div>
       <motion.h3 
-        className="text-xl font-bold mb-3 text-slate-900"
+        style={{ color: 'var(--text-primary)' }}
+        className="text-xl font-bold mb-3"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: (number - 1) * 0.2 + 0.4 }}
@@ -65,7 +68,8 @@ export default function ProcessStep({ number, icon: Icon, title, description, sh
         {title}
       </motion.h3>
       <motion.p 
-        className="text-slate-600"
+        style={{ color: 'var(--text-secondary)' }}
+        className=""
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: (number - 1) * 0.2 + 0.5 }}

@@ -1,11 +1,10 @@
 'use client';
 
-import WaveLogo from './WaveLogo';
 import { HiSparkles } from 'react-icons/hi2';
 import { motion } from 'framer-motion';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 import { translations } from '@/locales/translations';
-
+import Image from 'next/image';
 export default function Hero() {
   const { language } = useAccessibility();
   const t = translations[language].hero;
@@ -76,7 +75,12 @@ export default function Hero() {
           >
             <motion.div variants={itemVariants} className="inline-block">
               <motion.span 
-                className="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-semibold border border-teal-200 inline-flex items-center gap-2"
+                style={{
+                  backgroundColor: 'var(--hero-badge-bg)',
+                  color: 'var(--hero-badge-text)',
+                  borderColor: 'var(--hero-badge-border)'
+                }}
+                className="px-4 py-2 rounded-full text-sm font-semibold border inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05, boxShadow: "0 4px 12px rgba(20, 184, 166, 0.2)" }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
@@ -92,11 +96,13 @@ export default function Hero() {
 
             <motion.h1 
               variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold leading-tight text-slate-900"
+              style={{ color: 'var(--text-primary)' }}
+              className="text-5xl md:text-6xl font-bold leading-tight"
             >
               {t.title}
               <motion.span 
-                className="block text-teal-500 mt-2"
+                style={{ color: 'var(--primary)' }}
+                className="block mt-2 text-3xl md:text-4xl"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
@@ -107,7 +113,8 @@ export default function Hero() {
 
             <motion.p 
               variants={itemVariants}
-              className="text-xl text-slate-600 leading-relaxed"
+              style={{ color: 'var(--text-secondary)' }}
+              className="text-xl leading-relaxed"
             >
               {t.description}
             </motion.p>
@@ -117,7 +124,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <motion.button 
-                className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg"
+                className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-semibold shadow-lg"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(20, 184, 166, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -126,7 +133,11 @@ export default function Hero() {
                 {t.tryFree}
               </motion.button>
               <motion.button 
-                className="border-2 border-teal-500 text-teal-500 px-8 py-4 rounded-full font-semibold"
+                style={{
+                  borderColor: 'var(--primary)',
+                  color: 'var(--primary)'
+                }}
+                className="border-2 px-8 py-4 rounded-full font-semibold"
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(20, 184, 166, 0.05)" }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -153,14 +164,15 @@ export default function Hero() {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <motion.div 
-                    className="text-3xl font-bold text-teal-500"
+                    style={{ color: 'var(--primary)' }}
+                    className="text-3xl font-bold"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.2 + (index * 0.1), duration: 0.5, type: "spring" }}
                   >
                     {stat.value}
                   </motion.div>
-                  <div className="text-sm text-slate-600">{stat.label}</div>
+                  <div style={{ color: 'var(--text-secondary)' }} className="text-sm">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -186,7 +198,8 @@ export default function Hero() {
               }}
             />
             <motion.div 
-              className="relative w-80 h-80 text-teal-500 drop-shadow-2xl"
+              style={{ color: 'var(--primary)' }}
+              className="relative w-[450px] h-[450px] md:w-[600px] md:h-[600px] drop-shadow-2xl"
               animate={{ 
                 y: [0, -10, 0],
               }}
@@ -197,7 +210,7 @@ export default function Hero() {
               }}
               aria-label="Logo CalmWave"
             >
-              <WaveLogo className="w-full h-full" />
+              <Image src="/imagens/bannerCell.png" layout="fill" objectFit="contain" alt="Demonstração de Celular com a aplicação CalmWave" />
             </motion.div>
           </motion.div>
         </div>

@@ -23,7 +23,8 @@ export default function FeatureCard({ icon: Icon, title, description, index = 0 
       aria-labelledby={`feature-${index}`}
     >
       <motion.div 
-        className="w-14 h-14 bg-teal-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+        style={{ backgroundColor: 'var(--primary)' }}
+        className="w-14 h-14 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg"
         whileHover={{ 
           scale: 1.1,
           rotate: 360,
@@ -39,7 +40,8 @@ export default function FeatureCard({ icon: Icon, title, description, index = 0 
       </motion.div>
       <motion.h3 
         id={`feature-${index}`} 
-        className="text-xl font-bold mb-3 text-slate-900"
+        style={{ color: 'var(--text-primary)' }}
+        className="text-xl font-bold mb-3"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: index * 0.1 + 0.2 }}
@@ -47,7 +49,8 @@ export default function FeatureCard({ icon: Icon, title, description, index = 0 
         {title}
       </motion.h3>
       <motion.p 
-        className="text-slate-600 leading-relaxed"
+        style={{ color: 'var(--text-secondary)' }}
+        className="leading-relaxed"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: index * 0.1 + 0.3 }}

@@ -122,8 +122,12 @@ O projeto foi estruturado com componentes modulares e reutilizáveis para facili
 - **Componentes de Layout**: Header, Footer
 - **Componentes de Conteúdo**: Hero, Features, HowItWorks, Benefits, CTA
 - **Componentes Reutilizáveis**: Logo, Button, FeatureCard, BenefitCard, ProcessStep
+- **Componentes de Acessibilidade**: AccessibilityMenu, ColorBlindFilters
 
-📖 **Veja [COMPONENTS.md](./COMPONENTS.md) para documentação completa dos componentes**
+### 📚 Documentação
+
+- 📖 **[ACCESSIBILITY.md](./ACCESSIBILITY.md)** - Guia completo de acessibilidade
+- 🎨 **[COLORS.md](./COLORS.md)** - Guia de edição de cores e paleta
 
 ## 🎨 Tecnologias Utilizadas
 

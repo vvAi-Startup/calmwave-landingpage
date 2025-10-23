@@ -3,6 +3,7 @@
 import { HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin } from 'react-icons/hi2';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 import { translations } from '@/locales/translations';
+import Logo from './Logo';
 
 export default function Footer() {
   const { language } = useAccessibility();
@@ -10,35 +11,30 @@ export default function Footer() {
 
   const footerLinks = {
     produto: [
-      { name: t.links.resources, href: "#recursos" },
-      { name: t.links.pricing, href: "#" },
-      { name: t.links.faq, href: "#" }
+      // { name: t.links.resources, href: "#recursos" },
+      // { name: t.links.pricing, href: "#" },
+      // { name: t.links.faq, href: "#" }
     ],
     empresa: [
-      { name: t.links.about, href: "#" },
-      { name: t.links.blog, href: "#" },
-      { name: t.links.careers, href: "#" }
+      // { name: t.links.about, href: "#" },
+      // { name: t.links.blog, href: "#" },
+      // { name: t.links.careers, href: "#" }
     ],
     contato: [
-      { icon: HiOutlineEnvelope, text: "contato@calmwave.com.br", href: "mailto:contato@calmwave.com.br" },
-      { icon: HiOutlinePhone, text: "(11) 1234-5678", href: "tel:+551112345678" },
-      { icon: HiOutlineMapPin, text: "São Paulo, SP", href: "#" }
+      { icon: HiOutlineEnvelope, text: "vvai2023ltda@gmail.com", href: "mailto:vvai2023ltda@gmail.com" },
+      { icon: HiOutlineMapPin, text: "Registro, SP", href: "https://www.google.com/maps/place/Fatec+Registro/@-24.4961672,-47.8488176,17z/data=!3m1!4b1!4m6!3m5!1s0x94c5338bea658bc1:0xdea6f93b5aae61a8!8m2!3d-24.4961672!4d-47.8462427!16s%2Fg%2F11t9v8sg3d?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D" }
     ]
   };
 
   return (
     <footer className="bg-white border-t border-slate-200 py-12" role="contentinfo">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Logo e Descrição */}
           <div className="animate-fadeIn">
             <div className="mb-4 flex items-center gap-3">
               <div className="w-10 h-10 text-teal-500" aria-label="Logo CalmWave">
-                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="100" cy="100" r="95" stroke="currentColor" strokeWidth="4"/>
-                  <path d="M 20 130 Q 50 110, 80 115 T 140 125 T 180 130 L 180 190 Q 100 195, 20 190 Z" fill="currentColor" opacity="0.9"/>
-                  <path d="M 120 90 Q 140 70, 160 80 L 170 110 Q 150 95, 130 100 Z" fill="currentColor" opacity="0.7"/>
-                </svg>
+                <Logo variant="colored" showText={false} />
               </div>
               <span className="text-xl font-bold text-slate-900">Calm Wave</span>
             </div>
@@ -47,7 +43,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Produto */}
+          {/* Produto
           <div className="animate-fadeIn" style={{ animationDelay: '0.1s' }}>
             <h4 className="font-bold mb-4 text-teal-500">{t.product}</h4>
             <ul className="space-y-2 text-slate-600">
@@ -66,6 +62,7 @@ export default function Footer() {
           </div>
 
           {/* Empresa */}
+          {/*
           <div className="animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             <h4 className="font-bold mb-4 text-teal-500">{t.company}</h4>
             <ul className="space-y-2 text-slate-600">
@@ -81,7 +78,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contato */}
           <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>

@@ -23,7 +23,7 @@ export default function Logo({ size = "md", showText = true, variant = "gradient
         <WaveLogo className="w-full h-full" />
       </div>
       {showText && (
-        <span className={`${text} font-bold text-slate-800 dark:text-white`}>
+        <span className={`${text} font-bold text-slate-800 text-${colorVariants[variant]}`}>
           Calm Wave
         </span>
       )}
