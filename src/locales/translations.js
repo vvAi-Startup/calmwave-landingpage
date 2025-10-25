@@ -1,210 +1,250 @@
 export const translations = {
   pt: {
     header: {
-      resources: 'Recursos',
-      howItWorks: 'Como Funciona',
-      benefits: 'Benefícios',
-      start: 'Começar'
+      resources: "Recursos",
+      howItWorks: "Como Funciona",
+      benefits: "Benefícios",
+      start: "Começar",
     },
     hero: {
-      badge: 'Tecnologia Educacional Inclusiva',
-      title: 'Calm Wave',
-      subtitle: 'Clareza de Fala com o Poder da IA: Suporte Auditivo para Crianças com TPAC.',
-      description: 'A tecnologia que silencia o ruído da sala e proporciona o ambiente auditivo ideal para o seu filho com TPAC.',
-      tryFree: 'Experimente Gratuitamente',
-      learnMore: 'Saiba Mais',
+      badge: "Tecnologia Educacional Inclusiva",
+      title: "Calm Wave",
+      subtitle:
+        "Clareza de Fala com o Poder da IA: Suporte Auditivo para Crianças com TPAC.",
+      description:
+        "A tecnologia que silencia o ruído da sala e proporciona o ambiente auditivo ideal para o seu filho com TPAC.",
+      tryFree: "Experimente Gratuitamente",
+      learnMore: "Saiba Mais",
       stats: {
-        noiseReduction: 'Inteligibilidade de Fala',
-        schools: 'Escolas Parceiras',
-        support: 'Suporte'
-      }
+        noiseReduction: "Inteligibilidade de Fala",
+        schools: "Escolas Parceiras",
+        support: "Suporte",
+      },
     },
     features: {
-      title: 'Recursos Principais',
-      subtitle: 'Tecnologia de ponta para uma experiência auditiva excepcional em sala de aula',
+      title: "Recursos Principais",
+      subtitle:
+        "Tecnologia de ponta para uma experiência auditiva excepcional em sala de aula",
       realTime: {
-        title: 'Processamento em Tempo Real',
-        description: 'IA avançada processa o áudio instantaneamente, removendo ruídos de fundo e entregando a voz do professor com clareza cristalina.'
+        title: "Processamento Imediato de Alta Fidelidade",
+        description:
+          "Nossa IA avançada processa e aprimora o áudio com a máxima velocidade humana possível. A cada segundo, a voz do professor é entregue com clareza cristalina, eliminando ruídos de fundo sem interrupções.",
       },
       integration: {
-        title: 'Fácil Integração',
-        description: 'Sistema plug-and-play que se integra facilmente com qualquer infraestrutura de sala de aula existente.'
+        title: "Integração Total: Simples e Universal",
+        description:
+          "Conecte e use, sem barreiras. Nosso app é plug-and-play e opera em qualquer dispositivo móvel (smartphones, tablets). É 100% compatível com todos os acessórios de áudio que você já usa: fones de ouvido (com e sem fio) e microfones.",
       },
       security: {
-        title: 'Seguro e Privado',
-        description: 'Criptografia de ponta a ponta garante que o áudio esteja sempre protegido e em conformidade com LGPD.'
-      }
+        title: "Privacidade Máxima: Processamento Zero-Storage",
+        description:
+          "Seu áudio é processado em tempo real por nossa IA e nunca é salvo em nossos servidores. Cada sessão é tratada individualmente e descartada após o uso, garantindo a sua privacidade e total conformidade com a LGPD (Lei Geral de Proteção de Dados).",
+      },
     },
     howItWorks: {
-      title: 'Como Funciona',
-      subtitle: 'Três passos simples para transformar a experiência auditiva',
+      title: "Como Funciona",
+      subtitle: "Tecnologia Criada para TPAC: Três passos para clareza e foco",
       step1: {
-        title: 'Captura do Áudio',
-        description: 'O microfone do professor captura sua voz em tempo real durante a aula.'
+        title: "1. Captação em Tempo Zero",
+        description:
+          "O professor usa o microfone habitual. O sistema inicia a captura da voz a cada instante, enviando-a com total fidelidade para ser processada sem perda de detalhes.",
       },
       step2: {
-        title: 'Processamento IA',
-        description: 'Nossa IA remove ruídos e melhora a clareza do áudio instantaneamente.'
+        title: "2. Otimização Instantânea com IA",
+        description:
+          "A IA de ponta processa o áudio em ciclos ultrarrápidos de 1 segundo, eliminando ruídos de fundo e aprimorando a clareza da voz, garantindo o máximo de qualidade com a mínima latência.",
       },
       step3: {
-        title: 'Entrega Limpa',
-        description: 'O áudio limpo é transmitido para os fones das crianças com TPAC.'
-      }
+        title: "3. Clareza Otimizada para TPAC",
+        description:
+          "O áudio limpo é entregue diretamente aos fones, garantindo que a voz do professor chegue com clareza cristalina e foco máximo. Essencialmente projetado para crianças com TPAC, eliminamos as interferências que dificultam a compreensão e o aprendizado.",
+      },
     },
     benefits: {
-      title: 'Por Que Escolher Calm Wave?',
-      subtitle: 'Impacto real na vida de estudantes e educadores',
+      title: "Impacto Comprovado: O Poder da Clareza Auditiva",
+      subtitle: "Resultados transformadores para alunos com TPAC e educadores",
       focus: {
-        title: 'Foco Melhorado',
-        description: 'Crianças conseguem se concentrar melhor nas aulas.'
+        title: "Clareza Máxima, Distração Zero",
+        description:
+          "Ao eliminar ruídos de fundo (problema central no TPAC), as crianças podem se concentrar exclusivamente na voz do professor, traduzindo em atenção sustentada e menos fadiga auditiva.",
       },
       performance: {
-        title: 'Melhor Desempenho',
-        description: 'Aumento na compreensão e retenção de conteúdo.'
+        title: "Acelere a Compreensão",
+        description:
+          "Quando o áudio é limpo e decodificado sem esforço, a retenção de conteúdo aumenta drasticamente, resultando em melhor desempenho acadêmico e desenvolvimento de habilidades de linguagem.",
       },
       inclusion: {
-        title: 'Inclusão',
-        description: 'Todos os alunos têm acesso igual ao aprendizado.'
+        title: "Inclusão Real na Sala de Aula",
+        description:
+          "Nossa tecnologia garante que cada aluno, especialmente aqueles com TPAC, tenha acesso equitativo e otimizado à instrução do professor, nivelando o campo de aprendizado para todos.",
       },
       confidence: {
-        title: 'Confiança',
-        description: 'Estudantes ganham autoconfiança e participação.'
-      }
+        title: "Autoconfiança para Participar",
+        description:
+          "A clareza do áudio reduz a frustração e a ansiedade. Os estudantes se sentem mais seguros para interagir e participar, sabendo que ouviram corretamente as instruções.",
+      },
     },
     cta: {
-      title: 'Pronto para Transformar sua Sala de Aula?',
-      subtitle: 'Junte-se a centenas de escolas que já estão proporcionando uma experiência de aprendizado inclusiva e acessível.',
-      scheduleDemo: 'Agende uma Demonstração',
-      talkToSpecialist: 'Fale com Especialista'
+      title: "O Primeiro Passo para o Foco Auditivo Começa Aqui.",
+      subtitle:
+        "Livre-se das distrações e garanta a compreensão e inclusão total de alunos com TPAC.",
+      mainAction: "Experimente Gratuitamente",
+      secondaryAction: "Fale Conosco",
+      teamLink: "Conheça a Equipe",
+      socialLink: "Nosso Instagram",
     },
     footer: {
-      description: 'Tecnologia que transforma vidas através da inclusão auditiva.',
-      product: 'Produto',
-      company: 'Empresa',
-      contact: 'Contato',
+      description:
+        "Calm Wave: A solução de IA para clareza e inclusão auditiva, especialmente para o TPAC.",
+      saibaMais: "Saiba Mais", 
+      empresa: "Empresa",    
+      ajuda: "Ajuda e Suporte", 
       links: {
-        resources: 'Recursos',
-        pricing: 'Preços',
-        faq: 'FAQ',
-        about: 'Sobre',
-        blog: 'Blog',
-        careers: 'Carreiras'
+        product: "O Produto", 
+        resources: "Recursos",
+        pricing: "Preços",
+        faq: "FAQ",
+        about: "Sobre Nós", 
+        team: "Nossa Equipe", 
+        blog: "Blog",
+        careers: "Carreiras",
+        contact: "Fale Conosco", 
       },
-      copyright: '2025 Calm Wave. Todos os direitos reservados.'
+      copyright: "2025 Calm Wave. Todos os direitos reservados.",
     },
     accessibility: {
-      colorBlindMode: 'Modo Daltonismo',
-      language: 'Idioma',
-      normal: 'Normal',
-      protanopia: 'Protanopia',
-      deuteranopia: 'Deuteranopia',
-      tritanopia: 'Tritanopia',
-      achromatopsia: 'Acromatopsia'
-    }
+      colorBlindMode: "Modo Daltonismo",
+      language: "Idioma",
+      normal: "Normal",
+      protanopia: "Protanopia",
+      deuteranopia: "Deuteranopia",
+      tritanopia: "Tritanopia",
+      achromatopsia: "Acromatopsia",
+    },
   },
-  en: {
+  en: { // BLOCO TOTALMENTE REESCRITO
     header: {
-      resources: 'Resources',
-      howItWorks: 'How It Works',
-      benefits: 'Benefits',
-      start: 'Get Started'
+      resources: "Resources",
+      howItWorks: "How It Works",
+      benefits: "Benefits",
+      start: "Get Started",
     },
     hero: {
-      badge: 'Inclusive Educational Technology',
-      title: 'Calm Wave',
-      subtitle: 'Crystal Clear Audio for Everyone',
-      description: 'Innovative noise reduction solution for children with Central Auditory Processing Disorder (CAPD), using AI to deliver the teacher\'s voice with exceptional clarity.',
-      tryFree: 'Try Free',
-      learnMore: 'Learn More',
+      badge: "Inclusive Educational Technology",
+      title: "Calm Wave",
+      subtitle:
+        "AI-Powered Speech Clarity: Auditory Support for Children with CAPD.",
+      description:
+        "The technology that silences classroom noise and delivers the optimal listening environment for your child with CAPD.",
+      tryFree: "Try for Free",
+      learnMore: "Learn More",
       stats: {
-        noiseReduction: 'Noise Reduction',
-        schools: 'Partner Schools',
-        support: 'Support'
-      }
+        noiseReduction: "Speech Intelligibility",
+        schools: "Partner Schools",
+        support: "Support",
+      },
     },
     features: {
-      title: 'Key Features',
-      subtitle: 'Cutting-edge technology for an exceptional classroom listening experience',
+      title: "Key Features",
+      subtitle:
+        "Cutting-edge technology for an exceptional classroom listening experience",
       realTime: {
-        title: 'Real-Time Processing',
-        description: 'Advanced AI processes audio instantly, removing background noise and delivering the teacher\'s voice with crystal clarity.'
+        title: "Immediate High-Fidelity Processing",
+        description:
+          "Our advanced AI processes and enhances audio at the maximum humanly possible speed. Every second, the teacher's voice is delivered with crystal clarity, eliminating background noise without interruptions.",
       },
       integration: {
-        title: 'Easy Integration',
-        description: 'Plug-and-play system that easily integrates with any existing classroom infrastructure.'
+        title: "Total Integration: Simple and Universal",
+        description:
+          "Connect and use, barrier-free. Our app is plug-and-play and operates on any mobile device (smartphones, tablets). It is 100% compatible with all audio accessories you already use: wired/wireless headphones and microphones.",
       },
       security: {
-        title: 'Secure & Private',
-        description: 'End-to-end encryption ensures audio is always protected and compliant with data protection regulations.'
-      }
+        title: "Maximum Privacy: Zero-Storage Processing",
+        description:
+          "Your audio is processed in real-time by our AI and is never stored on our servers. Each session is treated individually and discarded after use, ensuring your privacy and full compliance with GDPR/data protection laws.",
+      },
     },
     howItWorks: {
-      title: 'How It Works',
-      subtitle: 'Three simple steps to transform the listening experience',
+      title: "How It Works",
+      subtitle: "Technology Built for CAPD: Three steps to clarity and focus",
       step1: {
-        title: 'Audio Capture',
-        description: 'The teacher\'s microphone captures their voice in real-time during class.'
+        title: "1. Zero-Delay Capture",
+        description:
+          "The teacher uses their usual microphone. The system initiates voice capture at every instant, sending it with total fidelity for processing without loss of detail.",
       },
       step2: {
-        title: 'AI Processing',
-        description: 'Our AI removes noise and improves audio clarity instantly.'
+        title: "2. Instant AI Optimization",
+        description:
+          "Cutting-edge AI processes audio in ultra-fast 1-second cycles, eliminating background noise and enhancing voice clarity, ensuring maximum quality with minimal latency.",
       },
       step3: {
-        title: 'Clean Delivery',
-        description: 'Clean audio is transmitted to children\'s headphones with CAPD.'
-      }
+        title: "3. CAPD-Optimized Clarity",
+        description:
+          "The clean audio is delivered directly to the students' headphones, ensuring the teacher's voice arrives with crystal clarity and maximum focus. Essentially designed for children with CAPD, we eliminate the interferences that hinder comprehension and learning.",
+      },
     },
     benefits: {
-      title: 'Why Choose Calm Wave?',
-      subtitle: 'Real impact on students and educators lives',
+      title: "Proven Impact: The Power of Auditory Clarity",
+      subtitle: "Transformative results for students with CAPD and educators",
       focus: {
-        title: 'Improved Focus',
-        description: 'Children can concentrate better in class.'
+        title: "Maximum Clarity, Zero Distraction",
+        description:
+          "By eliminating background noise (a central CAPD challenge), children can concentrate exclusively on the teacher's voice, resulting in sustained attention and reduced auditory fatigue.",
       },
       performance: {
-        title: 'Better Performance',
-        description: 'Increased comprehension and content retention.'
+        title: "Accelerate Comprehension",
+        description:
+          "When audio is clean and decoded effortlessly, content retention increases drastically, leading to better academic performance and language skill development.",
       },
       inclusion: {
-        title: 'Inclusion',
-        description: 'All students have equal access to learning.'
+        title: "True Classroom Inclusion",
+        description:
+          "Our technology ensures that every student, especially those with CAPD, has equitable and optimized access to the teacher's instruction, leveling the learning field for all.",
       },
       confidence: {
-        title: 'Confidence',
-        description: 'Students gain self-confidence and participation.'
-      }
+        title: "Self-Confidence to Participate",
+        description:
+          "Audio clarity reduces frustration and anxiety. Students feel more secure to interact and participate, knowing they heard the instructions correctly.",
+      },
     },
     cta: {
-      title: 'Ready to Transform Your Classroom?',
-      subtitle: 'Join hundreds of schools already providing an inclusive and accessible learning experience.',
-      scheduleDemo: 'Schedule a Demo',
-      talkToSpecialist: 'Talk to a Specialist'
+      title: "The First Step to Auditory Focus Starts Here.",
+      subtitle:
+        "Get rid of distractions and ensure full comprehension and inclusion for students with CAPD.",
+      mainAction: "Try for Free",
+      secondaryAction: "Contact Us",
+      teamLink: "Meet the Team",
+      socialLink: "Our Instagram",
     },
     footer: {
-      description: 'Technology that transforms lives through hearing inclusion.',
-      product: 'Product',
-      company: 'Company',
-      contact: 'Contact',
+      description:
+        "Calm Wave: The AI solution for auditory clarity and inclusion, especially for CAPD.",
+      saibaMais: "Learn More",
+      empresa: "Company",
+      ajuda: "Help & Support",
       links: {
-        resources: 'Resources',
-        pricing: 'Pricing',
-        faq: 'FAQ',
-        about: 'About',
-        blog: 'Blog',
-        careers: 'Careers'
+        product: "The Product",
+        resources: "Resources",
+        pricing: "Pricing",
+        faq: "FAQ",
+        about: "About Us",
+        team: "Our Team",
+        blog: "Blog",
+        careers: "Careers",
+        contact: "Contact Us",
       },
-      copyright: '2025 Calm Wave. All rights reserved.'
+      copyright: "2025 Calm Wave. All rights reserved.",
     },
     accessibility: {
-      colorBlindMode: 'Color Blind Mode',
-      language: 'Language',
-      normal: 'Normal',
-      protanopia: 'Protanopia',
-      deuteranopia: 'Deuteranopia',
-      tritanopia: 'Tritanopia',
-      achromatopsia: 'Achromatopsia'
-    }
-  }
+      colorBlindMode: "Color Blind Mode",
+      language: "Language",
+      normal: "Normal",
+      protanopia: "Protanopia",
+      deuteranopia: "Deuteranopia",
+      tritanopia: "Tritanopia",
+      achromatopsia: "Achromatopsia",
+    },
+  },
 };
 
 export function useTranslation(language) {

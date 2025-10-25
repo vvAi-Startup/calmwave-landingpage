@@ -18,6 +18,7 @@ export default function Home() {
         <HowItWorks />
         <Benefits />
         <CTA />
+        {/* Contact moved to a dedicated page at /contato */}
       </main>
       <Footer />
     </div>

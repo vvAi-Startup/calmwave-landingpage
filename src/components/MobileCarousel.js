@@ -14,17 +14,17 @@ export default function MobileCarousel() {
       alt: 'Tela principal do CalmWave'
     },
     {
-      image: '/imagens/AUDIOS.png',
-      alt: 'Audios do CalmWave'
-    },
-    {
-      image: '/imagens/GRAVADOR.png',
+      image: '/imagens/Gravador.png',
       alt: 'Gravador do CalmWave'
     },
     {
         image: '/imagens/Playlists.png',
         alt: 'Playlists do CalmWave'
-    }
+    },
+    {
+      image: '/imagens/AUDIOS.png',
+      alt: 'Audios do CalmWave'
+    },
   ];
 
   const nextSlide = () => {
@@ -154,7 +154,7 @@ export default function MobileCarousel() {
             onClick={() => goToSlide(index)}
             className={`transition-all duration-300 rounded-full ${
               index === currentIndex
-                ? 'w-8 h-3 bg-primary'
+                ? 'w-8 h-3 bg-[#14b8a6] hover:w-10'
                 : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
             }`}
             aria-label={`Ir para slide ${index + 1}`}
