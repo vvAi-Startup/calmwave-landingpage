@@ -14,7 +14,7 @@ export const translations = {
       tryFree: 'Experimente Gratuitamente',
       learnMore: 'Saiba Mais',
       stats: {
-        noiseReduction: 'Redução de Ruído',
+        noiseReduction: 'Inteligibilidade de Fala',
         schools: 'Escolas Parceiras',
         support: 'Suporte'
       }

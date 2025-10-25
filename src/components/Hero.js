@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 import { translations } from '@/locales/translations';
 import Image from 'next/image';
+import Link from 'next/link';
+import MobileCarousel from './MobileCarousel';
 export default function Hero() {
   const { language } = useAccessibility();
   const t = translations[language].hero;
@@ -67,40 +69,38 @@ export default function Hero() {
     <section className="bg-[#FEFDFA] py-20 md:py-32" role="region" aria-label={language === 'pt' ? 'Seção principal' : 'Main section'}>
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             className="space-y-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.div variants={itemVariants} className="inline-block">
-              <motion.span 
+              <motion.span
                 style={{
                   backgroundColor: 'var(--hero-badge-bg)',
                   color: 'var(--hero-badge-text)',
                   borderColor: 'var(--hero-badge-border)'
                 }}
                 className="px-4 py-2 rounded-full text-sm font-semibold border inline-flex items-center gap-2"
-                whileHover={{ scale: 1.05, boxShadow: "0 4px 12px rgba(20, 184, 166, 0.2)" }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
                 <motion.div
                   animate={{ rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
                 >
-                  <HiSparkles className="w-4 h-4" aria-hidden="true" />
                 </motion.div>
                 {t.badge}
               </motion.span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               variants={itemVariants}
               style={{ color: 'var(--text-primary)' }}
               className="text-5xl md:text-6xl font-bold leading-tight"
             >
               {t.title}
-              <motion.span 
+              <motion.span
                 style={{ color: 'var(--primary)' }}
                 className="block mt-2 text-3xl md:text-4xl"
                 initial={{ opacity: 0, x: -20 }}
@@ -111,7 +111,7 @@ export default function Hero() {
               </motion.span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               variants={itemVariants}
               style={{ color: 'var(--text-secondary)' }}
               className="text-xl leading-relaxed"
@@ -119,51 +119,56 @@ export default function Hero() {
               {t.description}
             </motion.p>
 
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <motion.button 
-                className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-semibold shadow-lg"
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(20, 184, 166, 0.3)" }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                aria-label={language === 'pt' ? 'Experimentar CalmWave gratuitamente' : 'Try CalmWave for free'}
-              >
-                {t.tryFree}
-              </motion.button>
-              <motion.button 
-                style={{
-                  borderColor: 'var(--primary)',
-                  color: 'var(--primary)'
-                }}
-                className="border-2 px-8 py-4 rounded-full font-semibold"
-                whileHover={{ scale: 1.05, backgroundColor: "rgba(20, 184, 166, 0.05)" }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                aria-label={language === 'pt' ? 'Saiba mais sobre CalmWave' : 'Learn more about CalmWave'}
-              >
-                {t.learnMore}
-              </motion.button>
+              <Link href="https://github.com/vvAi-Startup/Application_mobile" target='_blank'>
+
+                <motion.button
+                  className="bg-primary hover:bg-primary-hover text-[#14b8a6] px-8 py-4 rounded-full font-semibold shadow-lg"
+                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(14, 105, 94, 0.29)" }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  aria-label={language === 'pt' ? 'Experimentar CalmWave gratuitamente' : 'Try CalmWave for free'}
+                >
+                  {t.tryFree}
+                </motion.button>
+              </Link>
+
+              <Link href="https://www.instagram.com/calmwave.vvai" target="_blank">
+                <motion.button
+                  style={{
+                    borderColor: 'var(--primary)',
+                    color: 'var(--primary)'
+                  }}
+                  className="border-2 px-8 py-4 rounded-full font-semibold"
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(20, 184, 166, 0.05)" }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  aria-label={language === 'pt' ? 'Saiba mais sobre CalmWave' : 'Learn more about CalmWave'}
+                >
+                  {t.learnMore}
+                </motion.button>
+              </Link>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="grid grid-cols-3 gap-6 pt-4"
               variants={containerVariants}
             >
               {[
-                { value: "95%", label: t.stats.noiseReduction },
-                { value: "100+", label: t.stats.schools },
+                { value: "87.9%", label: t.stats.noiseReduction },
                 { value: "24/7", label: t.stats.support }
               ].map((stat, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="text-center sm:text-left"
                   variants={statsVariants}
                   whileHover={{ y: -5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <motion.div 
+                  <motion.div
                     style={{ color: 'var(--primary)' }}
                     className="text-3xl font-bold"
                     initial={{ opacity: 0, scale: 0 }}
@@ -178,41 +183,52 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
-            className="relative flex justify-center items-center"
+          <motion.div
+            className="relative hidden md:flex justify-center items-center"
             initial="hidden"
             animate="visible"
             variants={logoVariants}
             whileHover="hover"
           >
-            <motion.div 
+            <motion.div
               className="absolute inset-0 bg-teal-400/10 rounded-full blur-3xl"
-              animate={{ 
+              animate={{
                 scale: [1, 1.1, 1],
                 opacity: [0.3, 0.5, 0.3]
               }}
-              transition={{ 
+              transition={{
                 duration: 4,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
             />
-            <motion.div 
+            <motion.div
               style={{ color: 'var(--primary)' }}
-              className="relative w-[450px] h-[450px] md:w-[600px] md:h-[600px] drop-shadow-2xl"
-              animate={{ 
+              className="relative w-[700px] h-[700px] drop-shadow-2xl"
+              animate={{
                 y: [0, -10, 0],
               }}
-              transition={{ 
+              transition={{
                 duration: 3,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
               aria-label="Logo CalmWave"
             >
-              <Image src="/imagens/bannerCell.png" layout="fill" objectFit="contain" alt="Demonstração de Celular com a aplicação CalmWave" />
+              <Image
+                src="/imagens/bannerCell.png"
+                fill
+                style={{ objectFit: 'contain' }}
+                alt="Demonstração de Celular com a aplicação CalmWave"
+                priority
+              />
             </motion.div>
           </motion.div>
+
+          {/* Carousel para mobile */}
+          <div className="md:hidden mt-8">
+            <MobileCarousel />
+          </div>
         </div>
       </div>
     </section>
